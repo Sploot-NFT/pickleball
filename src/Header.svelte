@@ -232,6 +232,6 @@
         position: absolute;
         right:3vw;
         width: 20vw;
-        height: 1.5vw;
+        height: 1.8vw;
     }
 </style>

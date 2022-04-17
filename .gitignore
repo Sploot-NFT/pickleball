@@ -4,3 +4,8 @@
 .DS_Store
 
 src/config.json
+
+
+static/cards/
+
+static/characters/
