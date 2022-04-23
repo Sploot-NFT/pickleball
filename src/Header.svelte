@@ -215,7 +215,7 @@
 <style>
     .header {
         text-align:center;
-        background: #eee;
+        background: rgba(255, 255, 255, 0.05);
         overflow:hidden;
     }
 

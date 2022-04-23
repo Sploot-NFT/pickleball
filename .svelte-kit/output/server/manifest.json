@@ -1,0 +1,93 @@
+{
+  ".svelte-kit/build/index.js": {
+    "file": "index.js",
+    "src": ".svelte-kit/build/index.js",
+    "isEntry": true,
+    "imports": [
+      "_index-1e0b989c.js"
+    ],
+    "dynamicImports": [
+      "src/hooks.js"
+    ]
+  },
+  "src/routes/api/twitter/get_handle/[token].js": {
+    "file": "entries/endpoints/api/twitter/get_handle/_token_.js",
+    "src": "src/routes/api/twitter/get_handle/[token].js",
+    "isEntry": true
+  },
+  "src/routes/api/ens/reverse_lookup/[address].js": {
+    "file": "entries/endpoints/api/ens/reverse_lookup/_address_.js",
+    "src": "src/routes/api/ens/reverse_lookup/[address].js",
+    "isEntry": true
+  },
+  "src/routes/api/twitter/get_auth_token/[verifier]/[code].js": {
+    "file": "entries/endpoints/api/twitter/get_auth_token/_verifier_/_code_.js",
+    "src": "src/routes/api/twitter/get_auth_token/[verifier]/[code].js",
+    "isEntry": true,
+    "imports": [
+      "_config-1c7ca0cd.js"
+    ]
+  },
+  "src/routes/api/twitter/get_action/[handle]/[game]/[token].js": {
+    "file": "entries/endpoints/api/twitter/get_action/_handle_/_game_/_token_.js",
+    "src": "src/routes/api/twitter/get_action/[handle]/[game]/[token].js",
+    "isEntry": true
+  },
+  ".svelte-kit/runtime/components/layout.svelte": {
+    "file": "entries/fallbacks/layout.svelte.js",
+    "src": ".svelte-kit/runtime/components/layout.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-1e0b989c.js"
+    ]
+  },
+  ".svelte-kit/runtime/components/error.svelte": {
+    "file": "entries/fallbacks/error.svelte.js",
+    "src": ".svelte-kit/runtime/components/error.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-1e0b989c.js"
+    ]
+  },
+  "src/routes/index.svelte": {
+    "file": "entries/pages/index.svelte.js",
+    "src": "src/routes/index.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-1e0b989c.js",
+      "_Header-6983c8fe.js",
+      "_config-1c7ca0cd.js"
+    ]
+  },
+  "src/routes/team.svelte": {
+    "file": "entries/pages/team.svelte.js",
+    "src": "src/routes/team.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-1e0b989c.js",
+      "_Header-6983c8fe.js",
+      "_config-1c7ca0cd.js"
+    ]
+  },
+  "_index-1e0b989c.js": {
+    "file": "chunks/index-1e0b989c.js"
+  },
+  "_config-1c7ca0cd.js": {
+    "file": "chunks/config-1c7ca0cd.js"
+  },
+  "_Header-6983c8fe.js": {
+    "file": "chunks/Header-6983c8fe.js",
+    "imports": [
+      "_index-1e0b989c.js",
+      "_config-1c7ca0cd.js"
+    ],
+    "css": [
+      "assets/Header-d3013754.css"
+    ]
+  },
+  "src/hooks.js": {
+    "file": "chunks/hooks-8a9b865d.js",
+    "src": "src/hooks.js",
+    "isDynamicEntry": true
+  }
+}

@@ -17,7 +17,3 @@
 	<span slot="currentPage">{pageValue.prettyName}</span>
 </Header> 
 <svelte:component this={pageValue.component}/>
-
-{#if browser == false}
-<p> lol</p>
-{/if}
