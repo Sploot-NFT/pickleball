@@ -173,24 +173,29 @@
 
 
 <div class="header">
-    <h1 style="text-align: center">Pickleball</h1>
-
-    {#if (address != "" && ens_name != "") }
-        <button on:click={disconnectWallet} class="integration-button" style="top:3vw">Disconnect {ens_name}</button>
-    {:else if (address != "")}
-        <button on:click={disconnectWallet} class="integration-button" style="top:3vw">Disconnect {address}</button>
-    {:else}
-        <button on:click={connectWallet} class="integration-button" style="top:3vw">Connect Wallet</button>
-    {/if}
-
-    {#if (twitter_token != "") }
-        <button on:click={disconnectTwitter} class="integration-button" style="top:5vw">Disconnect @{twitter_handle}</button>
-    {:else}
-        <button on:click={connectTwitter} class="integration-button" style="top:5vw">Connect Twitter</button>
-    {/if}
-    
-
-    <h2 style="text-align: center"><slot name="currentPage"></slot></h2>
+    <table style="width: 100vw">
+        <td style="width: 33vw">
+            <h1 style="text-align: left; position: relative; left: 1vw">Pickleball</h1>
+        </td>
+        <td style="width: 33vw">
+            <h2 style="text-align: center"><slot name="currentPage"></slot></h2>
+        </td>
+        <td style="width: 33vw">
+            {#if (address != "" && ens_name != "") }
+                <button on:click={disconnectWallet} class="integration-button" style="top: 2.5vh">Disconnect {ens_name}</button>
+            {:else if (address != "")}
+                <button on:click={disconnectWallet} class="integration-button" style="top: 2.5vh">Disconnect {address}</button>
+            {:else}
+                <button on:click={connectWallet} class="integration-button" style="top: 2.5vh">Connect Wallet</button>
+            {/if}
+        
+            {#if (twitter_token != "") }
+                <button on:click={disconnectTwitter} class="integration-button" style="top:3.5vw">Disconnect @{twitter_handle}</button>
+            {:else}
+                <button on:click={connectTwitter} class="integration-button" style="top:3.5vw">Connect Twitter</button>
+            {/if}
+        </td>
+    </table>
 
     <b>
         <a class="page-link"

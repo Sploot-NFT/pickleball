@@ -48,9 +48,9 @@
     }
 </script>
 
-<h2 style="text-align:center; margin-bottom:-1vh">Roster</h2>
+<h2 style="text-align:center; margin-bottom:-1vh; margin-top:-0.5vh">Roster</h2>
 <div class="card-browser" >
-    <div style="overflow-y:scroll; height:72.5vh;" on:scroll={streamTable}>
+    <div style="overflow-y:scroll; height:80.5vh;" on:scroll={streamTable}>
         <table id="card-browser-table" style="table-layout: fixed">
             {#each selected_characters.slice(0,row_num*row_length) as row}
                 <tr>
@@ -59,7 +59,6 @@
                             <div id="{character}-div" style="cursor:move;position:relative;left:0">
                                 <img id="{character}" on:click={onCardClick} style="width:12vw;" src="/cards/{character}.png" /> 
                             </div>
-                            
                         </td>
                     {/each}
                 </tr>
@@ -70,7 +69,7 @@
 
 <style>
     .card-browser {
-        height:72vh;
+        height:79vh;
         width:50vw;
         overflow-x:hidden;
         overflow-y:hidden;

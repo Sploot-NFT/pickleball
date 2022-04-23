@@ -37,11 +37,11 @@
 
 </script>
 
-<h2 style="text-align:center;margin-bottom:-1vh">Team Selection</h2>
+<h2 style="text-align:center;margin-bottom:-1vh;margin-top:-0.5vh">Team Selection</h2>
 <div class="team-select">
     <div style="width:39vw;margin:auto">
-        <h3 style="text-align: center">Fans</h3>
-        <div style="border:dotted; padding:1vh">
+        <h3 style="text-align: center; margin-top:1vh; margin-bottom:-0vh">Fans</h3>
+        <div style="border:dotted; padding:0.5vh">
             <table id="team-selection">
                 <tr id="fans">
                     <td>
@@ -63,13 +63,13 @@
                 <table>
                     <tr>
                         <td>
-                            <h3 style="text-align:center">Staff</h3>
+                            <h3 style="text-align:center; margin-top:1vh; margin-bottom:-0vh">Staff</h3>
                             <div style="border: dotted; padding:1vh; overflow:hidden">
                                 <img on:click={onPositionClick} id="character-staff-1" src="/cards/blank.png" class="position-card" />
                             </div>
                         </td>
                         <td>
-                            <h3 style="text-align:center">Players</h3>
+                            <h3 style="text-align:center; margin-top:1vh; margin-bottom:-0vh">Players</h3>
                             <div style="border:dotted;padding:0.7vh;overflow:hidden">
                                 <table>
                                     <tr id="players">
@@ -93,7 +93,7 @@
 
 <style>
     .team-select {
-        height:72vh;
+        height:79vh;
         width:38.6vw;
         overflow-x:hidden;
         overflow-y:hidden;
