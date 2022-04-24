@@ -19,6 +19,20 @@ for i in range(num_chars):
     for trait in character_json["attributes"]:
         character[trait["trait_type"].lower()] = trait["value"]
 
+    dna_list = character_json["dna"]
+
+    avgs = {}
+
+    avgs['body'] = int(round((dna_list[0]['code'] % 1 + dna_list[1]
+                       ['code'] % 1 + dna_list[2]['code'] % 1)/3, 2) * 100)
+    avgs['soul'] = int(round((dna_list[3]['code'] % 1 + dna_list[4]
+                       ['code'] % 1 + dna_list[5]['code'] % 1)/3, 2) * 100)
+    avgs['mind'] = int(round((dna_list[6]['code'] % 1 + dna_list[7]
+                       ['code'] % 1 + dna_list[8]['code'] % 1)/3, 2) * 100)
+    avgs['ovr'] = int(round((avgs['body'] + avgs['soul'] + avgs['mind'])/3, 2))
+
+    character = {**character, **avgs}
+
     characters.append(character)
 
 with open(output_file, "w+") as f:
