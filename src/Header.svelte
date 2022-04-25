@@ -136,12 +136,11 @@
             localStorage.setItem("twitter_token_expiry", Date.now() + response.expires_in*1000);
 
             fetch(`${config.hosted_url}/api/twitter/get_handle/${response.access_token}`).then(response => response.json()).then(json => {
-                localStorage.setItem("twitter_handle", json.data.username);
+                localStorage.setItem("twitter_handle", json.data.username); 
                 twitter_handle = json.data.username;
                 console.log(json);
+                window.location.href = "/";
             });
-
-            window.location.href = "/";
         });
     }
 
